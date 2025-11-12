@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "10-2-pytest"
+version = "0.1.0"
+description = ""
+authors = ["Kalyuzhnyy Dmitry <difrom_pro@mail.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.14"
+poetry-core = "^2.2.1"
+
+
+[tool.poetry.group.lint.dependencies]
+black = "^25.11.0"
+flake8 = "^7.3.0"
+mypy = "^1.18.2"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest-cov = "^7.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
